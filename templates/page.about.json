@@ -1,11 +1,11 @@
 {
   "sections": {
-    "main": {
-      "type": "main-register",
+    "about": {
+      "type": "about-page",
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "about"
   ]
 }

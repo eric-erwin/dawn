@@ -1,0 +1,10 @@
+#hello-world-section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.hello-world-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
