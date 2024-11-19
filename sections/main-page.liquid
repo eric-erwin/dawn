@@ -21,14 +21,23 @@
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
   </div>
-</div>
+  {% if template.suffix == 'home' %}
+    {% render 'hello-world' %}
+  {% endif %}
 
+</div>
 {% schema %}
 {
   "name": "t:sections.main-page.name",
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "hello-world-text",
+      "label": "Hello World Message",
+      "default": "Welcome to my store!"
+    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
